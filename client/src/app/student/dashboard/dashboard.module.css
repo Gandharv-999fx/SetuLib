@@ -111,3 +111,16 @@
   justify-content: space-between;
   box-shadow: var(--shadow-xs);
 }
+
+@media (max-width: 600px) {
+  .header { flex-direction: column; align-items: stretch; gap: 1rem; }
+  .headerActions { flex-wrap: wrap; }
+  .headerActions button, .headerActions a { width: 100%; justify-content: center; }
+  
+  .activeCard { padding: 1.5rem 1rem; }
+  .activeTop { flex-direction: column; align-items: stretch; gap: 1rem; }
+  .activeTop button { width: 100%; justify-content: center; }
+  
+  .pastItem { flex-direction: column; align-items: flex-start; gap: 0.75rem; padding: 1rem; }
+  .pastItem > div:last-child { width: 100%; display: flex; justify-content: flex-end; }
+}

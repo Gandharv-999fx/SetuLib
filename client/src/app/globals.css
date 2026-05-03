@@ -294,6 +294,19 @@ tbody tr:hover { background: var(--surface-2); }
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
-  .page { padding: 1.5rem 1rem; }
+  .page { padding: 1.25rem 1rem; }
   h1 { font-size: 1.375rem; }
+  .card, .card-flat { padding: 1.25rem; }
+  .flex { flex-wrap: wrap; }
+  
+  th, td { padding: 0.75rem 1rem; }
+}
+
+@media (max-width: 480px) {
+  .page { padding: 1rem 0.75rem; }
+  h1 { font-size: 1.25rem; }
+  h2 { font-size: 1.125rem; }
+  .card, .card-flat { padding: 1rem; }
+  .alert { padding: 0.75rem 1rem; font-size: 0.8125rem; }
+  .badge { padding: 0.2rem 0.5rem; font-size: 0.65rem; }
 }
