@@ -15,7 +15,7 @@ interface Session {
   student: Student; guard?: { name: string }; flagNotes?: string;
 }
 
-const ICON_MAP: Record<string, React.FC<{size?:number;strokeWidth?:number;style?:React.CSSProperties}>> = {
+const ICON_MAP: Record<string, any> = {
   laptop: Laptop, book: BookOpen, bag: Briefcase, device: Smartphone, other: Package,
 };
 

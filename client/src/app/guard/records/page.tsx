@@ -15,7 +15,7 @@ interface Session {
   guard?: { name: string };
 }
 
-const ICON_MAP: Record<string, React.FC<{size?:number;strokeWidth?:number}>> = {
+const ICON_MAP: Record<string, any> = {
   laptop: Laptop, book: BookOpen, bag: Briefcase, device: Smartphone, other: Package,
 };
 const STATUS_LABELS: Record<string, string> = {

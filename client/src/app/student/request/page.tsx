@@ -10,7 +10,7 @@ import styles from './request.module.css';
 type BelongingType = 'laptop' | 'book' | 'bag' | 'device' | 'other';
 interface Belonging { description: string; type: BelongingType; }
 
-const TYPES: { value: BelongingType; label: string; Icon: React.FC<{size?:number;strokeWidth?:number}> }[] = [
+const TYPES: { value: BelongingType; label: string; Icon: any }[] = [
   { value: 'laptop', label: 'Laptop',  Icon: Laptop },
   { value: 'book',   label: 'Book',    Icon: BookOpen },
   { value: 'bag',    label: 'Bag',     Icon: Briefcase },

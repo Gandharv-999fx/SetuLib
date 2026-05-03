@@ -8,7 +8,7 @@ import styles from './BelongingsList.module.css';
 type BelongingType = 'laptop' | 'book' | 'bag' | 'device' | 'other';
 interface Belonging { description: string; type: BelongingType | string; }
 
-const ICON_MAP: Record<string, React.FC<{ size?: number; strokeWidth?: number }>> = {
+const ICON_MAP: Record<string, any> = {
   laptop: Laptop, book: BookOpen, bag: Briefcase, device: Smartphone, other: Package,
 };
 const TYPES = ['laptop', 'book', 'bag', 'device', 'other'];
