@@ -21,7 +21,7 @@ export async function subscribeToPush(): Promise<boolean> {
 
     const subscription = await reg.pushManager.subscribe({
       userVisibleOnly: true,
-      applicationServerKey,
+      applicationServerKey: applicationServerKey as any,
     });
 
     await api.post('/push/subscribe', { subscription });

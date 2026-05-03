@@ -19,7 +19,7 @@ const ICON_MAP: Record<string, any> = {
   laptop: Laptop, book: BookOpen, bag: Briefcase, device: Smartphone, other: Package,
 };
 
-const fadeUp = { initial: { opacity: 0, y: 10 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.35 } };
+const fadeUp: any = { initial: { opacity: 0, y: 10 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.35 } };
 
 export default function GuardDashboard() {
   const { user } = useAuthStore();
